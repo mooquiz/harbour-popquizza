@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-popquizza
+Exec=harbour-popquizza
+Name=Popquizza
+
+[X-Sailjail]
+# Org/app must match SailfishApp's QCoreApplication names (both the binary
+# name) so the sandbox whitelists the existing LocalStorage path.
+OrganizationName=harbour-popquizza
+ApplicationName=harbour-popquizza
+Permissions=Internet

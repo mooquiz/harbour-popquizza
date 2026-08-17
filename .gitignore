@@ -1,0 +1,7 @@
+RPMS/
+Makefile
+documentation.list
+harbour-popquizza
+*.o
+moc_*
+*.pro.user
