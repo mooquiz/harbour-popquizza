@@ -26,7 +26,7 @@ Dialog {
             }
             MenuItem {
                 text: "Reload"
-                visible: app.quizState !== "submitted"
+                visible: app.quizState === "error"
                 onClicked: app.load()
             }
             MenuItem {

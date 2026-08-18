@@ -24,6 +24,10 @@ ApplicationWindow {
     ListModel { id: questionsModel }
     property alias questions: questionsModel
 
+    // Only the newest load()'s callback may touch the model — same-day
+    // reloads share a date key, so the key alone can't identify staleness.
+    property int loadRequest: 0
+
     function load() {
         quizState = "loading"
         quizTitle = ""
@@ -34,8 +38,10 @@ ApplicationWindow {
         quizDate = new Date()
         loadedKey = Quiz.dateKey(quizDate)
         var key = loadedKey
+        loadRequest++
+        var request = loadRequest
         Quiz.fetchQuestions(key, function (quiz) {
-            if (key !== loadedKey)
+            if (request !== loadRequest)
                 return
             if (!quiz) {
                 quizState = "error"

@@ -1,3 +1,7 @@
+* Tue Aug 18 2026 Kevin Hughes <kev@kev.pub> 1.0.7-1
+- Fix double-load of questions when reloading during an in-flight fetch
+- Reload menu entry only shown in the error state
+
 * Mon Aug 17 2026 Kevin Hughes <kev@kev.pub> 1.0.6-1
 - Launcher icon: right side now a full semicircle
 

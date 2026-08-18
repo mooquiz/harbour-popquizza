@@ -1,6 +1,6 @@
 Name:       harbour-popquizza
 Summary:    Daily pop music quiz
-Version:    1.0.6
+Version:    1.0.7
 Release:    1
 License:    AGPLv3+
 URL:        https://popquizza.com
