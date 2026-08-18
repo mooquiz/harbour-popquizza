@@ -1,0 +1,7 @@
+<services>
+  <service name="tar_git">
+    <param name="url">https://github.com/mooquiz/harbour-popquizza.git</param>
+    <param name="branch">master</param>
+    <param name="revision">1.0.6</param>
+  </service>
+</services>

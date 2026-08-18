@@ -16,6 +16,23 @@ BuildRequires:  desktop-file-utils
 Native Sailfish OS client for popquizza.com — ten new pop music
 questions every day. Questions are fetched from the web; scores,
 streaks and history live on the device.
+%if 0%{?_chum}
+Title: Popquizza
+Type: desktop-application
+DeveloperName: Kevin Hughes
+Categories:
+ - Game
+Custom:
+  Repo: https://github.com/mooquiz/harbour-popquizza
+PackageIcon: https://raw.githubusercontent.com/mooquiz/harbour-popquizza/master/store/icon-512.png
+Screenshots:
+ - https://raw.githubusercontent.com/mooquiz/harbour-popquizza/master/store/1-quiz.png
+ - https://raw.githubusercontent.com/mooquiz/harbour-popquizza/master/store/2-answers.png
+ - https://raw.githubusercontent.com/mooquiz/harbour-popquizza/master/store/3-results.png
+Links:
+  Homepage: https://popquizza.com
+  Bugtracker: https://github.com/mooquiz/harbour-popquizza/issues
+%endif
 
 %prep
 %setup -q -n %{name}-%{version}
